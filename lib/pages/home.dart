@@ -4,8 +4,6 @@ import 'package:google_sign_in/google_sign_in.dart';
 import 'package:lab8_033/service/auth_service.dart';
 
 
-
-
 class homepage extends StatefulWidget {
   const homepage({super.key});
 
@@ -30,7 +28,7 @@ class _homepageState extends State<homepage> {
             onPressed: () {
               authService.signInWithGoogle().then((value) {
                 print(value);
-                
+
               },);
             },
           ),

@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:lab8_033/firebase_options.dart';
@@ -8,6 +9,8 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+  // Ideal time to initialize
+await FirebaseAuth.instance.useAuthEmulator('10.0.2.2', 9099);
   runApp(const MyApp());
 }
 
