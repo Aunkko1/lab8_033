@@ -10,7 +10,7 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   // Ideal time to initialize
-await FirebaseAuth.instance.useAuthEmulator('10.0.2.2', 9099);
+// await FirebaseAuth.instance.useAuthEmulator('10.0.2.2', 9099);
   runApp(const MyApp());
 }
 
